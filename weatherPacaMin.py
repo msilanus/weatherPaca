@@ -5,6 +5,7 @@ import pyowm
 from _datetime import datetime
 import pytz
 
+
 class ApplicationIHM(QtWidgets.QMainWindow):
     def __init__(self):
         super(ApplicationIHM, self).__init__()
@@ -23,14 +24,11 @@ class ApplicationIHM(QtWidgets.QMainWindow):
         self.ui.cbDepartements.insertItems(0, lines_stripped)
         self.ui.cbDepartements.setCurrentText(lines_stripped[0])
 
-
     def fill_cb_city(self, dept):
         print("fill_cb_city")
 
-
     def show_city(self):
         print("show_city")
-
 
     def previsions(self):
         print("previsions")
